@@ -14,8 +14,9 @@
             <h1>Administration</h1>
         </div>
         <nav>
-            <li>Students</li>
-            <li>Add Student</li>
+            <input type="button" data-id="list" class="button-check" id="send-note" value="Search Student" >
+        
+            
             
         </nav>
 
@@ -29,7 +30,7 @@
            </div>
         <div class="column uno">
            
-            <form class="notes-form">
+            <form class="notes-form" id="formulario">
                 <h2>Student name👦🏻 </h2>
                 <input type= "text" id="t2" placeholder="Student name"></br>
                 <h2>Student last name 👩🏾‍🦰  </h2>
@@ -41,7 +42,7 @@
                 <h2>Group to enroll 🟡 </h2>
                 <input type= "text" id="t5"  placeholder="Group 1-A"></br>
 
-                <input type="button" data-id="send-note" class="button-check" id="send-note" value="Add" >
+                <input type="button" data-id="send-note" class="button-check" id="t10" value="Add" >
             </form>
           
             </div>
@@ -52,4 +53,5 @@
     </section>
 </body>
 <script src="app.js"></script>
+<script src="list.js"></script>
 </html>
