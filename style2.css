@@ -1,0 +1,58 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: helvetica;
+    background-color: plum;
+
+}
+
+header{
+    display: flex;
+    background-color:plum;
+    align-items: center;
+    width: 100%;
+    padding: 20px 50px;
+    color: white;
+}
+
+header nav{
+    background-color: purple;
+    display: flex;
+    margin-left: 30px;
+    justify-content: center;
+    margin-left: auto;
+    padding: 20px 40px;
+
+}
+
+
+header nav li{
+    margin: 0 13px;
+    justify-content: center;
+    margin-left: auto;
+    color: white;
+    background-color: plum;
+    font-size: medium;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+.globalList{
+    background-color: pink;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 50px;
+    margin-top: 5%;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
