@@ -142,7 +142,7 @@
   componente(){
     return `
     <div class=" ${this.id}" style='background-color:${(this.average>7)?" #FFE521": "#FFE521"};border: 1px solid ${(this.average>7)?"#FFE521": "#FFE521"}'>
-        <h4>${this.Name} </br> ${this.lastName} </br>  ${this.age} years old </br>  ${this.subject} </br>  ${this.group} </h4>
+        <h4>${this.Name} </br> ${this.lastName} </br>  ${this.age}  </br>  ${this.subject} </br>  ${this.group} </h4>
         
      
       
