@@ -1,3 +1,8 @@
+const list = [];
+
+
+
+
 (function() {
         let DB;
     
@@ -145,6 +150,7 @@
         <h4>${this.Name} </br> ${this.lastName} </br>  ${this.age}  </br>  ${this.subject} </br>  ${this.group} </h4>
         
      
+        
       
     </div>
     `
@@ -190,7 +196,9 @@ button.forEach((button)=>{
 
          let student = new Student (0,Name,lastName,age, subject, group);
          student.calculateAverage();
+         list.push(student)
          divisionStudents.innerHTML+=student.componente();
+         localStorage.setItem("listStudents",JSON.stringify(list));
     
 
         })
