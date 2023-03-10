@@ -1,9 +1,56 @@
-const list = [];
+class Student{
+    constructor( Name,lastName,age,subject,group){
+     
+      this.Name = Name
+      this.lastName = lastName
+      this.age = age
+      this.subject = subject
+      this.group = group
+     
+    }
+
+    calculateAverage() {
+
+      this.average = (this.note1 + this.note2 + this.note3) /3;
+
+
+    if(this.average >8){
+     return("<span class='green'>Approved</span>" )
+    }else{
+      return ("<span class='red'>Not Approved</span>")
+    }
+    return(this.average >8);
+
+  }
+
+
+  componente(){
+    return `
+    <div style='background-color:${(this.average>7)?" #FFE521": "#FFE521"};border: 1px solid ${(this.average>7)?"#FFE521": "#FFE521"}'>
+        <h4>${this.Name} </br> ${this.lastName} </br>  ${this.age}  </br>  ${this.subject} </br>  ${this.group} </h4>
+        
+     
+        
+      
+    </div>
+    `
+  }
+}
 
 
 
 
-(function() {
+
+const list = [
+    new Student("Yunuen", "Acosta",20,"Spanish 2", "Group 1-A"),
+    new Student ("Carlos", "Peralta", 30, "Programming 3", "Group 2-B"),
+    new Student ("Fátima", "Fernández",40, "Algebra",  "Group 3-C")
+]
+
+
+
+
+
         let DB;
     
         const formulario = document.querySelector('#formulario');
@@ -113,52 +160,11 @@ const list = [];
         }, 3000);
     }
     
-    })();
+  
     
     
 
 //////////////////////////////////////////
-{class Student{
-    constructor( Name,lastName,age,subject,group){
-     
-      this.Name = Name
-      this.lastName = lastName
-      this.age = age
-      this.subject = subject
-      this.group = group
-     
-    }
-
-    calculateAverage() {
-
-      this.average = (this.note1 + this.note2 + this.note3) /3;
-
-
-    if(this.average >8){
-     return("<span class='green'>Approved</span>" )
-    }else{
-      return ("<span class='red'>Not Approved</span>")
-    }
-    return(this.average >8);
-
-  }
-
-
-  componente(){
-    return `
-    <div class=" ${this.id}" style='background-color:${(this.average>7)?" #FFE521": "#FFE521"};border: 1px solid ${(this.average>7)?"#FFE521": "#FFE521"}'>
-        <h4>${this.Name} </br> ${this.lastName} </br>  ${this.age}  </br>  ${this.subject} </br>  ${this.group} </h4>
-        
-     
-        
-      
-    </div>
-    `
-  }
-}
-
-
-
 
 // //Send button
 //Por cada botón agregar addEventListener
@@ -194,7 +200,7 @@ button.forEach((button)=>{
          openModal (students,componente);
          let divisionStudents =document.querySelector("#globalList");
 
-         let student = new Student (0,Name,lastName,age, subject, group);
+         let student = new Student (Name,lastName,age, subject, group);
          student.calculateAverage();
          list.push(student)
          divisionStudents.innerHTML+=student.componente();
@@ -215,7 +221,7 @@ document.querySelector(".global-list").innerHTML = ap
 
 
 }
-}
+
         
 
 

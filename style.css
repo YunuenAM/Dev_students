@@ -84,6 +84,17 @@ input[type="button-add"]{
 }
 
 
+
+input[type="button-clear"]{
+    width: 88px;
+    border: none;
+    background-color: black;
+    color: white;
+    padding: 20px;
+    margin-top: 30px;
+    margin-left: 20px;
+}
+
 input[type="text"]{
     width: 180px;
     height: 40px;
@@ -100,7 +111,12 @@ p{
     font-size: xx-large;
 }
 
-
+.filtrar {
+    width: 100px;
+    color: black;
+    height: 50px;
+    background-color: yellow;
+}
 
 
 
