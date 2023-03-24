@@ -37,7 +37,7 @@ const list=JSON.parse(localStorage.getItem("listStudents"));
 
 
 // function filtrado(){
-//     let datosFiltrados = list.filter(function(Alumno){
+//     let datosBusqueda = list.filter(function(Alumno){
 //         return Alumno.Name=="Yunuen"
 //     })
 //     console.log(datosFiltrados);
@@ -46,6 +46,17 @@ const list=JSON.parse(localStorage.getItem("listStudents"));
 /////////////////////////////////////////////////////////////////////
 //Selectors
 
+
+
+// function filtrado(){
+//     let datosFiltrados = list.filter(function(Alumno){
+//         return Alumno.Name=="Yunuen"
+//     })
+//     console.log(datosFiltrados);
+// }
+
+/////////////////////////////////////////////////////////////////////
+//Selectors
 let Name =  document.querySelector('#t2');
 let lastName = document.querySelector('#t3');
 let age = document.querySelector('#t4');
