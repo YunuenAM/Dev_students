@@ -1,73 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>School Administration</title>
+    <title>School Filter</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    
-    <header>
-        <div class="adm">
-            <h1>Administration</h1>
-        </div>
-        <nav>
+    <h1>Students filter</h1>
+    <div class="container">
+        <form id="searcher">
+            <div class="row">
+                <div class="three columns">
+                    <label for="Name"></label>
+                    <select class="u-full-width" id="Name">
+                        <option value="Select"> Select Name</option>
+                        <option value="Yunuen">Yunuen</option>
+                        <option value="David">David</option>
+                        <option value="Marco">Marco</option>
+                        <option value="Génesis">Génesis</option>
+                        <option value="Martha">Martha</option>
+                        <option value="Zaim">Zaim</option>
+                    </select>
+                </div>
 
+                <div class="three columns">
+                    <label for="last name"></label>
+                    <select class="u-full-width" id="lastName">
+                        <option value="">Select Last name</option>
+                        <option value="Acosta">Acosta</option>
+                        <option value="Maya">Maya</option>
+                        <option value="Juárez">Juárez</option>
+                        <option value="Vélez">Vélez</option>
+                        <option value="Peralta">Peralta</option>
+                        <option value="Gutiérrez">Gutiérrez</option>
 
-           
-            <button  onclick= "location.href= 'list.html'" data-id="button-filter"  class="filtrar" type="button" value="filter"></button>
-        
+                    </select>
+                </div>
 
+                <div class="three columns">
+                    <label for="Age"></label>
+                    <select class="u-full-width" id="age">
+                        <option value="">Select Age</option>
+                        <option value="20 years old">20 years old</option>
+                        <option value="30 years old">30 years old</option>
+                        <option value="25 years old">25 years old</option>
+                        <option value="32 years old">32 years old</option>
+                        <option value="21 years old">21 years old</option>
+                        <option value="27 years old">27 years old</option>
+                    </select>
+                </div>
 
+                <div class="row">
+                    <div class="four columns">
+                        <label for="Subject"></label>
+                        <select class="u-full-width" id="subject">
+                            <option value="">Select Subject to enroll</option>
+                            <option value="English">English</option>
+                            <option value="Programming">Programming</option>
+                            <option value="Computational logic">Computational Logic</option>
+                            <option value="JavaScript">JavaScript</option>
+                            <option value="Math">Math</option>
 
-        </nav>
+                        </select>
+                    </div>
 
-    </header>
-    <section id="banner">
-        <div class="container">
-            <div class="column dos">
-               
+                    <div class="four columns">
+                        <label for="Group"></label>
+                        <select class="u-full-width" id="group">
+                            <option value="">Select Group</option>
+                            <option value="1-A">1-A</option>
+                            <option value="2-A">2-A</option>
+                            <option value="1-B">1-B</option>
+                            <option value="2-B">2-B</option>
+
+                        </select>
+                    </div>
 
                 </div>
-           </div>
-        <div class="column uno">
-           
-            <form class="notes-form" id="formulario">
-                <h2>Student name👦🏻 </h2>
-                <input type= "text" id="t2" placeholder="Student name"></br>
-                <h2>Student last name 👩🏾‍🦰  </h2>
-                <input type= "text" id="t3"  placeholder="Student last name"></br>
-                <h2>Student age 🎂 </h2>
-                <input type= "text" id="t4"  placeholder="Student age"></br>
-                <h2>Subject to enroll 🎯</h2>
-                <input type= "text" id="t5"  placeholder="Spanish 2"></br>
-                <h2>Group to enroll 🟡 </h2>
-                <input type= "text" id="t6"  placeholder="Group 1-A"></br>
-
-                <input type="button" data-id="send-note-2" class="button-check" id="send-note" value="Add" >    
-                <input type="button2" data-id="send-note-3" class="button-check-2" id="send-note-2" value="Clear">
-            
-            </form>
-          
             </div>
         </form>
-
-        <div id="globalList">
-        
-            <form class="form2">
-                <div>
-                <p class="global-list"> List</p>
-            </div>
-            </form>
-        
-        
+        <div id="result">
+            <h1>Results</h1>
         </div>
-        </div>
-        
 
-    </section>
+
+    </div>
+
 </body>
+
 <script src="app.js"></script>
+<script src="db.js"></script>
+
 </html>
